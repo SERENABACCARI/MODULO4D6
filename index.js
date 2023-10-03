@@ -33,17 +33,7 @@ window.onload = async function () {
 
     console.log(data); // Stampo i dati ottenuti
 
-/*creo un dropDown*/
-   /* const userList2 = document.querySelector("#dropdown-menu");
 
-    data.forEach(user => {
-        const userElement = document.createElement("li");
-        userElement.innerHTML = `
-        <a class="dropdown-item" href="#">${user.email}</a>
-        <a class="dropdown-item" href="#">${user.username}</a>
-        <a class="dropdown-item" href="#">${user.name}</a>`;
-        userList2.appendChild(userElement);
-    });*/
 
 
     /*creo un input di testo*/
@@ -52,8 +42,7 @@ window.onload = async function () {
 
     data.forEach(user => {
         const userElement = document.createElement("option");
-       /* userElement.value = user.email; // Set the value attribute to the email
-        userElement.textContent = user.email; // Set the text content of the option*/
+       
         userElement.innerHTML = `
         
             <option value="email">${user.email}
